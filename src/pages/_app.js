@@ -1,7 +1,7 @@
 import React from "react";
 import "./../styles/global.scss";
 import Navbar from "./../components/Navbar";
-import HomePage from "./home";
+import IndexPage from "./index";
 import AboutPage from "./about";
 import FaqPage from "./faq";
 import ContactPage from "./contact";
@@ -32,7 +32,7 @@ function App(props) {
             />
 
             <Switch>
-              <Route exact path="/home" component={HomePage} />
+              <Route exact path="/" component={IndexPage} />
 
               <Route exact path="/about" component={AboutPage} />
 
